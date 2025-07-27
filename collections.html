@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collections - BortiQ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { display: ['Playfair Display'], body: ['Poppins'] },
+          colors: { brand: { light:'#fdfaf6',dark:'#1a1a1a',accent:'#c5a572'} }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body bg-brand-light dark:bg-brand-dark text-gray-800 dark:text-gray-100">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-brand-dark/70 backdrop-blur sticky top-0 z-50">
+    <h1 class="text-2xl font-display text-brand-accent">BortiQ</h1>
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="index.html" class="hover:text-brand-accent">Home</a></li>
+      <li><a href="collections.html" class="hover:text-brand-accent">Collections</a></li>
+      <li><a href="about.html" class="hover:text-brand-accent">About</a></li>
+      <li><a href="contact.html" class="hover:text-brand-accent">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">🌓</button>
+  </nav>
+
+  <main class="p-8">
+    <h2 class="text-3xl font-display text-center mb-8">Our Collections</h2>
+<!--filter buttons-->
+    <div class="flex flex-wrap gap-2 justify-center mb-8">
+  <button class="filter-btn px-4 py-2 rounded-full bg-brand-accent text-white" data-category="all">All</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="dresses">Dresses</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="ethnic">Ethnic/Traditional</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="western">Western</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="accessories">Accessories</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="gold">Gold</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="silver">Silver</button>
+  <button class="filter-btn px-4 py-2 rounded-full border" data-category="stone">Stone/Pearl</button>
+</div>
+
+    <!-- Grid of Items -->
+     <!--ethnic-->
+    <div id="collections-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="collection-item dresses ethnic bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/ethnic1.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Ethnic Elegance</h3>
+           <h3 class="text-lg font-semibold mb-1">Silk Saree</h3>
+  <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹1,499</p>
+  
+  <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+       <div class="collection-item dresses ethnic bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/ethnic2.webp" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Ethnic Elegance</h3>
+          <h3 class="text-lg font-semibold mb-1">Lehanga</h3>
+  <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹2,499</p>
+  
+  <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+
+        </div>
+      </div>
+
+       <div class="collection-item dresses ethnic bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/ethnic3.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Ethnic Elegance</h3>
+          <h3 class="text-lg font-semibold mb-1">Ethnic Anarkali Kurti</h3>
+  <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹899</p>
+  
+  <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+       <div class="collection-item dresses ethnic bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/ethnic4.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Ethnic Elegance</h3>
+          <h3 class="text-lg font-semibold mb-1">Chanderi Kurti Pant Dupatta Set</h3>
+  <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹825</p>
+  
+  <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+       <div class="collection-item dresses ethnic bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/ethnic5.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Ethnic Elegance</h3>
+          <h3 class="text-lg font-semibold mb-1">Shiffon Saree</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹999</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+       <div class="collection-item dresses ethnic bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/ethnic6.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Ethnic Elegance</h3>
+           <h3 class="text-lg font-semibold mb-1">Cotton Kurta set</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹799</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+<!--Western-->
+
+      <div class="collection-item dresses western bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/western.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Modern Western</h3>
+           <h3 class="text-lg font-semibold mb-1">Fit and flare Maroon Maxi</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹600</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item dresses western bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/western2.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Modern Western</h3>
+           <h3 class="text-lg font-semibold mb-1">Bodycon Black calf length dress</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹499</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item dresses western bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/western3.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Modern Western</h3>
+           <h3 class="text-lg font-semibold mb-1">A-line calf length dress</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹549</p>
+        <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item dresses western bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/western4.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Modern Western</h3>
+           <h3 class="text-lg font-semibold mb-1">A-line Purple maxi</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹599</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item dresses western bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/western5.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Modern Western</h3>
+           <h3 class="text-lg font-semibold mb-1">Bodycon green mid-length dress</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹699</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item dresses western bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/western6.JPG" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Modern Western</h3>
+           <h3 class="text-lg font-semibold mb-1">Solid jumpsuit</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹499</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+<!--silver-->
+      <div class="collection-item accessories silver bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/silver1.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Silver Collection</h3>
+          <h3 class="text-lg font-semibold mb-1">Copper party wear silver jewellery set</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹119</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories silver bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/silver2.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Silver Collection</h3>
+          <h3 class="text-lg font-semibold mb-1">Oxidised silver jewellery set</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹129</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories silver bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/silver3.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Silver Collection</h3>
+          <h3 class="text-lg font-semibold mb-1">Silver-plated white jewellery set with earrings</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹219</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories silver bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/silver4.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Silver Collection</h3>
+           <h3 class="text-lg font-semibold mb-1">Party wear Silver jewellery set for girls</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹119</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories silver bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/silver5.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Silver Collection</h3>
+           <h3 class="text-lg font-semibold mb-1">Unique silver bangles and earrings set</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹119</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories silver bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <img src="assets/silver6.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Silver Collection</h3>
+           <h3 class="text-lg font-semibold mb-1">Silver earrings</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹59</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+<!--Gold-->
+      <div class="collection-item accessories gold bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/gold1.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Golden Touch</h3>
+           <h3 class="text-lg font-semibold mb-1">Alloy Gold-plated Gold Jewel Set  (Pack of 1)</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹220</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories gold bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/gold2.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Golden Touch</h3>
+           <h3 class="text-lg font-semibold mb-1">Temple gold jewelry set</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹799</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories gold bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/gold3.webp" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Golden Touch</h3>
+           <h3 class="text-lg font-semibold mb-1">Atique gold necklace with earrings</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹199</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories gold bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/gold4.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Golden Touch</h3>
+           <h3 class="text-lg font-semibold mb-1">Atique gold bangle</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹99</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories gold bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/gold5.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Golden Touch</h3>
+           <h3 class="text-lg font-semibold mb-1">Gold plated Earrings</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹119</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories gold bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/gold6.webp" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Golden Touch</h3>
+           <h3 class="text-lg font-semibold mb-1">Choker</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹229</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+<!--Stones-->
+      <div class="collection-item accessories stone bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/stone1.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Stone & Pearl</h3>
+           <h3 class="text-lg font-semibold mb-1">Kundhan choker</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹299</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories stone bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/stone2.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Stone & Pearl</h3>
+           <h3 class="text-lg font-semibold mb-1">Cornflake pearl necklace</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹229</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories stone bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/stone3.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Stone & Pearl</h3>
+           <h3 class="text-lg font-semibold mb-1">Statement necklace with earrings</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹199</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories stone bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/stone4.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Stone & Pearl</h3>
+           <h3 class="text-lg font-semibold mb-1">Gold-plated Stone with pearl set</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹359</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories stone bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/stone5.jpg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Stone & Pearl</h3>
+           <h3 class="text-lg font-semibold mb-1">Triple line gold plated necklace</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹199</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <div class="collection-item accessories stone bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-opacity duration-500 opacity-100">
+        <img src="assets/stone6.jpeg" class="w-full h-56 object-contain bg-gray-100">
+        <div class="p-4">
+          <h3 class="font-display text-xl mb-2">Stone & Pearl</h3>
+           <h3 class="text-lg font-semibold mb-1">Bridal necklace with craved stones</h3>
+            <p class="text-pink-600 dark:text-pink-400 font-bold mb-3">₹499</p>
+          <div class="mt-auto flex space-x-3">
+    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600">
+      Wishlist
+    </button>
+    <button class="flex-1 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">
+      Buy Now
+    </button>
+  </div>
+        </div>
+      </div>
+
+      <!---->
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

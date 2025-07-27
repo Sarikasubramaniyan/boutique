@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BortiQ – South Indian Boutique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              light: '#fdfaf6',
+              dark: '#1a1a1a',
+              accent: '#c5a572',
+            },
+          },
+        },
+      }
+    }
+  </script>
+</head>
+<body class="font-body bg-brand-light dark:bg-brand-dark text-gray-800 dark:text-gray-100">
+  <!-- Navbar  -->
+   <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-brand-dark/70 backdrop-blur sticky top-0 z-50">
+    <h1 class="text-2xl font-display text-brand-accent">BortiQ</h1>
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="index.html" class="hover:text-brand-accent">Home</a></li>
+      <li><a href="collections.html" class="hover:text-brand-accent">Collections</a></li>
+      <li><a href="about.html" class="hover:text-brand-accent">About</a></li>
+      <li><a href="contact.html" class="hover:text-brand-accent">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">🌓</button>
+  </nav>
+  <main class="max-w-7xl mx-auto px-6 py-16">
+  <h1 class="text-4xl font-display text-center mb-12">About Our Boutique</h1>
+
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Image section -->
+    <div>
+      <img src="assets/about - banner.JPG" alt="Our Boutique" class="rounded-2xl shadow-lg">
+    </div>
+
+    <!-- Text section -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-4">Our Story</h2>
+      <p class="mb-4 text-lg leading-relaxed">
+        At <strong>BortiQ</strong>, we believe in timeless elegance and quality craftsmanship. 
+        For over a decade, we have been curating exclusive collections of ethnic, western and handcrafted accessories 
+        that combine tradition with modern trends.
+      </p>
+      <p class="mb-4 text-lg leading-relaxed">
+        Every piece you find here is designed with care and passion. Our mission is to make you feel 
+        confident and special on every occasion.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Visit us to experience a perfect blend of style, culture and innovation.
+      </p>
+    </div>
+  </div>
+</main>
+<section class="bg-gray-50 dark:bg-gray-900 py-16 mt-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-display text-center mb-12">What Our Customers Say</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+        <img src="assets/review.png" alt="Customer 1" class="w-24 h-24 rounded-full object-cover mb-4">
+        <p class="text-lg italic mb-4">"Absolutely love the ethnic wear collection! The quality is amazing and the fitting is perfect."</p>
+        <h4 class="font-semibold">Priya S.</h4>
+        <span class="text-sm text-gray-500">Bangalore</span>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+        <img src="assets/review.png" alt="Customer 2" class="w-24 h-24 rounded-full object-cover mb-4">
+        <p class="text-lg italic mb-4">"Trendy western outfits and accessories! My go-to boutique for every occasion."</p>
+        <h4 class="font-semibold">Ananya R.</h4>
+        <span class="text-sm text-gray-500">Mumbai</span>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+        <img src="assets/review.png" alt="Customer 3" class="w-24 h-24 rounded-full object-cover mb-4">
+        <p class="text-lg italic mb-4">"Their accessories are unique! I always get compliments whenever I wear them."</p>
+        <h4 class="font-semibold">Neha K.</h4>
+        <span class="text-sm text-gray-500">Chennai</span>
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-display text-center mb-12">Our Boutique Sales Growth</h2>
+    <div class="bg-white  dark:bg-gray-800 p-6 rounded-2xl shadow-lg">
+      <canvas id="salesChart" height="120"></canvas>
+    </div>
+  </div>
+</section>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+ 
+</body>
+</html>
